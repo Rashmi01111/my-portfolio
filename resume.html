@@ -92,23 +92,6 @@ nav {
     justify-content: center;
 }
 
-/* NAV LINKS */
-nav a {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-    padding: 10px 22px;
-    border-radius: 25px;
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
-    font-size: 1rem;
-}
-
-nav a:hover {
-    background: #ffba42;
-    color: #000;
-}
-
 /* RESPONSIVE SETTINGS */
 @media (max-width: 768px) {
     nav {
@@ -119,7 +102,6 @@ nav a:hover {
     nav a {
         padding: 8px 18px;
         font-size: 0.95rem;
-        background-color:orange;
     }
 }
 
@@ -135,6 +117,23 @@ nav a:hover {
         font-size: 0.85rem;
     }
 }
+        nav a {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0,0,0,0.45);   /* ← DARK BACKGROUND */
+    padding: 10px 22px;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+/* Hover Color */
+nav a:hover {
+    background: #ffba42;
+    color: #000;
+}
+
 
 
         
@@ -259,5 +258,6 @@ nav a:hover {
 
 </body>
 </html>
+
 
 
