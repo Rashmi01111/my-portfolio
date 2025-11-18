@@ -16,57 +16,63 @@
             padding: 50px;
             color: #fff;
         }
-/* NAVBAR WRAPPER */
-nav {
+
+        /* MAIN NAVBAR */
+.navbar {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 22px;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    margin-top: 15px;
 }
 
-/* NAV LINKS */
-nav a {
+/* NAV BUTTONS */
+.navbar a {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-    padding: 10px 22px;
-    border-radius: 25px;
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
+    color: #f3f3f3;                     /* soft light grey */
+    background: rgba(20, 20, 20, 0.45); /* balanced glass dark */
+    padding: 10px 25px;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    transition: 0.25s ease;
     font-size: 1rem;
+    font-weight: 500;
 }
 
-nav a:hover {
-    background: #ffba42;
+/* HOVER EFFECT */
+.navbar a:hover {
+    background: rgba(255, 186, 66, 0.9); /* gold glow */
     color: #000;
+    transform: translateY(-3px);
 }
 
-/* RESPONSIVE SETTINGS */
+/* TABLET SIZE */
 @media (max-width: 768px) {
-    nav {
-        gap: 10px;
-        margin-top: 15px;
+    .navbar {
+        gap: 15px;
+        padding: 12px 0;
     }
-
-    nav a {
-        padding: 8px 18px;
-        font-size: 0.95rem;
+    .navbar a {
+        padding: 8px 20px;
+        font-size: 0.92rem;
     }
 }
 
+/* MOBILE SIZE */
 @media (max-width: 480px) {
-    nav {
-        flex-direction: row;
-        gap: 8px;
-        margin-top: 12px;
+    .navbar {
+        gap: 10px;
+        padding: 10px 0;
     }
-
-    nav a {
-        padding: 8px 15px;
+    .navbar a {
+        padding: 7px 14px;
         font-size: 0.85rem;
+        border-radius: 20px;
     }
 }
+
 
         
         /* nav {
@@ -204,3 +210,4 @@ nav a:hover {
 </body>
 
 </html>
+
