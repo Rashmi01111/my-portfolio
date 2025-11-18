@@ -16,6 +16,59 @@
             padding: 50px;
             color: #fff;
         }
+/* NAVBAR WRAPPER */
+nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* NAV LINKS */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    padding: 10px 22px;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background: #ffba42;
+    color: #000;
+}
+
+/* RESPONSIVE SETTINGS */
+@media (max-width: 768px) {
+    nav {
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        padding: 8px 18px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: row;
+        gap: 8px;
+        margin-top: 12px;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+}
+
+        
         /* nav {
             position: fixed;
             top: 20px;
@@ -24,7 +77,7 @@
             gap: 15px;
             z-index: 1000;
         } */
-        
+        /* 
 
         .navbar {
 
@@ -48,7 +101,7 @@
             backdrop-filter: blur(6px);
             transition: 0.3s;
         }
-        .navbar a:hover { background: #ffba42; color: #000; }
+        .navbar a:hover { background: #ffba42; color: #000; } */
 
         .contact-box {
             max-width: 850px;
@@ -149,4 +202,5 @@
 
 
 </body>
+
 </html>
