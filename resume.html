@@ -74,48 +74,57 @@
         ul {
             margin-left: 20px;
             line-height: 1.6;
-/* NAVIGATION SPACING IMPROVEMENT */
-
+/* NAVBAR WRAPPER */
 nav {
     display: flex;
-    justify-content: center;
     gap: 15px;
     margin-top: 20px;
-    z-index: 9999;   /* Always visible */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+/* NAV LINKS */
 nav a {
-    color: #f5f5f5;          /* Visible light grey */
-    background: rgba(0,0,0,0.55); /* Dark glass */
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
     padding: 10px 22px;
     border-radius: 25px;
-    font-weight: 500;
     backdrop-filter: blur(5px);
+    transition: 0.3s;
+    font-size: 1rem;
 }
 
-/* Responsive for tablet / small screens */
+nav a:hover {
+    background: #ffba42;
+    color: #000;
+}
+
+/* RESPONSIVE SETTINGS */
 @media (max-width: 768px) {
-  nav {
-    gap: 15px;
-    padding: 8px 0;
-  }
-  nav a {
-    padding: 6px 16px;
-    font-size: 0.95rem;
-  }
+    nav {
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        padding: 8px 18px;
+        font-size: 0.95rem;
+    }
 }
 
-/* Mobile / very small screens */
 @media (max-width: 480px) {
-  nav {
-    gap: 10px;
-  }
-  nav a {
-    padding: 6px 12px;
-    font-size: 0.85rem;
-  }
-}
+    nav {
+        flex-direction: row;
+        gap: 8px;
+        margin-top: 12px;
+    }
 
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+}
 
         
     </style>
@@ -224,6 +233,7 @@ nav a {
 
 </body>
 </html>
+
 
 
 
