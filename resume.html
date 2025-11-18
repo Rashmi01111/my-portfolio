@@ -75,83 +75,57 @@
             margin-left: 20px;
             line-height: 1.6;
         }
-        nav {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
-            z-index: 1000;
-          }
-/* NAVBAR WRAPPER */
 nav {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 0;
 }
 
-/* RESPONSIVE SETTINGS */
+/* DARK GLASS BUTTONS */
+nav a {
+    text-decoration: none;
+    color: #f5f5f5;                   /* Light grey, NOT white */
+    background: rgba(0, 0, 0, 0.55);   /* Premium dark glass */
+    padding: 10px 22px;
+    border-radius: 25px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+/* HOVER: GOLDEN PREMIUM */
+nav a:hover {
+    background: #ffba42;
+    color: #000;
+}
+
+/* TABLET */
 @media (max-width: 768px) {
     nav {
-        gap: 10px;
-        margin-top: 15px;
+        gap: 15px;
+        padding: 10px 0;
     }
-
     nav a {
         padding: 8px 18px;
         font-size: 0.95rem;
     }
 }
 
+/* MOBILE */
 @media (max-width: 480px) {
     nav {
-        flex-direction: row;
-        gap: 8px;
-        margin-top: 12px;
+        gap: 10px;
+        padding: 8px 0;
     }
-
     nav a {
-        padding: 8px 15px;
+        padding: 6px 14px;
         font-size: 0.85rem;
     }
 }
-        nav a {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(0,0,0,0.45);   /* ← DARK BACKGROUND */
-    padding: 10px 22px;
-    border-radius: 25px;
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
-    font-size: 1rem;
-}
-
-/* Hover Color */
-nav a:hover {
-    background: #ffba42;
-    color: #000;
-}
-
-
 
         
-          /* nav a {
-            text-decoration: none;
-            color: #fff;
-            background: rgba(255,255,255,0.2);
-            padding: 10px 20px;
-            border-radius: 25px;
-            backdrop-filter: blur(5px);
-            transition: 0.3s;
-            font-weight: 500;
-        }
-        
-        nav a:hover {
-            background: #ffba42;
-            color: #000;
-        } */
     </style>
 </head>
 <body>
