@@ -74,56 +74,44 @@
         ul {
             margin-left: 20px;
             line-height: 1.6;
-        }
+/* NAVIGATION SPACING IMPROVEMENT */
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 12px 0;
+  display: flex;
+  justify-content: center; /* Nav links center me align honge */
+  align-items: center;
+  gap: 20px; /* Nav links ke beech ki gap */
+  padding: 10px 0; /* Upar neeche thodi spacing */
 }
 
-/* DARK GLASS BUTTONS */
+/* Nav links styling */
 nav a {
-    text-decoration: none;
-    color: #f5f5f5;                   /* Light grey, NOT white */
-    background: rgba(0, 0, 0, 0.55);   /* Premium dark glass */
-    padding: 10px 22px;
-    border-radius: 25px;
-    backdrop-filter: blur(6px);
-    transition: 0.3s ease;
-    font-size: 1rem;
+  padding: 8px 20px; /* Thodi kam padding horizontally + vertically */
+  font-size: 1rem;
 }
 
-/* HOVER: GOLDEN PREMIUM */
-nav a:hover {
-    background: #ffba42;
-    color: #000;
-}
-
-/* TABLET */
+/* Responsive for tablet / small screens */
 @media (max-width: 768px) {
-    nav {
-        gap: 15px;
-        padding: 10px 0;
-    }
-    nav a {
-        padding: 8px 18px;
-        font-size: 0.95rem;
-    }
+  nav {
+    gap: 15px;
+    padding: 8px 0;
+  }
+  nav a {
+    padding: 6px 16px;
+    font-size: 0.95rem;
+  }
 }
 
-/* MOBILE */
+/* Mobile / very small screens */
 @media (max-width: 480px) {
-    nav {
-        gap: 10px;
-        padding: 8px 0;
-    }
-    nav a {
-        padding: 6px 14px;
-        font-size: 0.85rem;
-    }
+  nav {
+    gap: 10px;
+  }
+  nav a {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
 }
+
 
         
     </style>
@@ -232,6 +220,7 @@ nav a:hover {
 
 </body>
 </html>
+
 
 
 
