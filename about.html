@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Rashmi Sharma</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 22px;
+            border-radius: 25px;
+            color: #fff;
+            backdrop-filter: blur(6px);
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: #ffba42;
+            color: #000;
+        }
+
+        .about-box {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin: auto;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 1.7rem;
+            margin: 35px 0 15px 0;
+            font-weight: 600;
+        }
+
+        .project-list li {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<div class="about-box">
+    <h1>About Me</h1>
+    <p>Hello! I'm <strong>Rashmi Sharma</strong>, an Engineering student passionate about technology, development, and solving real-world problems. I enjoy building clean, user-friendly digital experiences and exploring new tech everyday. I aim to become a full-stack developer and work on impactful tech products.</p>
+
+    <p>I love learning, coding, designing, and contributing to projects that improve user experience. Whether it's development, AI tools, or creative apps — I always enjoy experimenting and building new things.</p>
+
+    <h2 class="section-title">Projects</h2>
+    <ul class="project-list">
+        <li><b>Shopping Website (E-Commerce Web App)</b> – Full-stack MERN e-commerce platform with filtering, cart, wishlist, seller analytics & Stripe payments.</li>
+        <li><b>Real-time Chat App</b> – MERN + Socket.io chat application with Cloudinary media support and responsive UI.</li>
+        <li><b>RozgarNow Job App</b> – A job-search mobile-friendly application helping users find jobs quickly with simple UI.</li>
+        <li><b>AI Video Generator Tool</b> – A creative AI tool that generates short videos from prompts using API-based integration.</li>
+    </ul>
+
+    <h2 class="section-title">What I Do</h2>
+    <ul>
+        <li>Full-Stack Development (React + Node + MongoDB)</li>
+        <li>Responsive UI/UX design (Tailwind, Material-UI)</li>
+        <li>Problem Solving & DSA</li>
+        <li>Linux, MySQL, API integration</li>
+        <li>Exploring AI & automation tools</li>
+    </ul>
+
+    <h2 class="section-title">My Goal</h2>
+    <p>My mission is to keep growing as a developer, create meaningful projects, and work in a professional tech environment where I can contribute to real world innovation.</p>
+</div>
+
+</body>
+</html>
